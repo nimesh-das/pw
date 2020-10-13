@@ -1,0 +1,94 @@
+.d-md-flex {
+
+}
+
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+
+.row-content {
+  margin: 0px 0px;
+  padding: 75px 0px;
+  border-bottom: 1px ridge;
+  height: 1000px; }
+
+.col-sm-6 {
+  height: 100%;
+}
+
+.container {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+#one {
+background-color: #4682B4;
+}
+
+#two {
+
+}
+
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px auto;
+  bottom: 0;
+  position: absolute;
+  width: 100%; }
+
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f; }
+
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 500px;
+  z-index: 0; }
+
+.navbar-dark {
+  background-color: #4682B4; }
+
+.navbar-dark .navbar-brand {
+   font-weight: bold;
+   color: #000000;
+} 
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #000000;
+}
+
+.navbar-dark .navbar-text {
+  color: #000000;
+}
+
+@media (min-width: 100px) and (max-width: 300px) {
+  .card {
+    margin-top: 20px;
+    margin-left: 300px;
+    position: absolute;
+    background-color: #B0C4DE;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+}
+
+.card-footer {
+  background-color: #ffffff;
+}
+
+.card-text {
+    color: #000066;
+}
+
+.centerBlock {
+  display: table;
+  margin: 50px auto auto 50px;
+  position: absolute;
+}
+
+.centerBlock h1 {
+  font-size: 100px;
+}

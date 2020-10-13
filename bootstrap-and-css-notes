@@ -1,0 +1,12 @@
+Bootstrap and CSS terminology
+
+flex
+- quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities
+
+bg
+- background
+- e.g. bg-light, bg-dark
+
+d-md-flex
+- display utility
+- middle to large flex container
