@@ -1,11 +1,11 @@
 /* Pen-specific styles */
-html, body { 
+html { 
   color: #fff;
   height: 100%;
 }
 
 /* Pattern styles */
-#container {
+body {
   background: linear-gradient(
     to right, 
     #ffecb3 0%, 
@@ -13,17 +13,19 @@ html, body {
     #FFFFFF 50%, 
     #FFFFFF 100%
   );
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
-  position: relative;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: fit-content(8rem) auto fit-content(8rem);
 }
 
 #header {
-    height: 10%;
     width: 100%;
     background: #ffcc00;
-    top: 0;
-    position: absolute;
+    grid-area: header;
 }
 
 #header a {
@@ -32,8 +34,8 @@ html, body {
 }
 
 #body-container {
-  display: grid;
-  
+  grid-area: main;
+
 }
 
 #text-container-1 {
@@ -47,9 +49,8 @@ html, body {
 }
 
 #footer {
-    height: 10%;
     width: 100%;
     background: #ffcc00;
-    position: absolute;
-    bottom: 0;
+    grid-area: footer;
+    text-align: center;
 }
