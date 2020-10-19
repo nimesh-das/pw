@@ -1,22 +1,15 @@
 /* Pen-specific styles */
 html { 
-  color: #fff;
   height: 100%;
+  color: #fff;
   padding: 0;
   margin: 0;
+  overflow-y: scroll;
 }
 
 /* Pattern styles */
 body {
-  background: linear-gradient(
-    to right, 
-    #ffecb3 0%, 
-    #ffecb3 50%, 
-    #FFFFFF 50%, 
-    #FFFFFF 100%
-  );
-  height: 100%;
-  width: 100%;
+  height: 200%;
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-rows: fit-content(8rem) auto fit-content(8rem);
@@ -27,6 +20,7 @@ body {
     background: #ffcc00;
     grid-area: header;
     padding: 1.5% 2%;
+    margin-bottom: 5%;
 }
 
 #header a {
@@ -35,25 +29,48 @@ body {
 }
 
 #body-container {
-  grid-area: main;
+    background: linear-gradient(
+    to right, 
+    #ffecb3 0%, 
+    #ffecb3 50%, 
+    #FFFFFF 50%, 
+    #FFFFFF 100%
+  );
+   grid-area: main;
 
 }
 
 #text-container-1 {
- z-index: 1000;
- float: right;
- padding-top: 5%;
- padding-right: 20%;
+   padding-top: 10%;
+   padding-bottom: 5%;
+   padding-right: 5%;
+   padding-left: 70%;
 }
 
 #text-container-1 p {
   color: black;
 }
 
+#hello {
+ font-size: 600%;
+ font-weight: bold;
+ padding: 0;
+ margin: 0;
+}
+
+#whoIam {
+  font-size: 150%;
+}
+
 #footer {
     width: 100%;
     background: #ffcc00;
     grid-area: footer;
+    margin-top: 5%;
     text-align: center;
     padding: 1.5% 2%;
+}
+
+#footer p {
+  margin-bottom: 0px;
 }
