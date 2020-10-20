@@ -43,7 +43,7 @@ body {
 }
 
 #pic-container-1 {
-   margin-top: 12%;
+   margin-top: 14%;
    margin-bottom: 5%;
    margin-right: 5%;
    margin-left: 30%;
@@ -63,13 +63,14 @@ body {
 #pic-container-1 .card img {
   margin-top: 10%;
   margin-bottom: 10%;
-  width: 75%;
+  width: 55%;
 }
 
 #pic-container-1 .card .nametag {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 150%;
+  font-family: Marker Felt, fantasy;
+  font-size: 180%;
   font-weight: bold;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -82,6 +83,20 @@ body {
   font-family: Courier New, Courier, monospace;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 120%;
+  margin: 10%;
+}
+
+#social-media-buttons {
+  margin-bottom: 5%;
+}
+
+#social-media-buttons a {
+  color: black;
+}
+
+#social-media-buttons a:hover {
+  color: white;
 }
 
 #text-container-1 {
@@ -161,4 +176,5 @@ body {
 
 #intro-paragraph {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
 }
