@@ -15,13 +15,31 @@ body {
   grid-template-rows: fit-content(8rem) auto fit-content(8rem);
 }
 
+.rightSpace {
+  padding-right: 5px;
+}
+
+.text {
+  color: #0D0A33;
+  font-family: 'Alatsi', sans-serif;
+}
+
+.link {
+  color: #0D0A33;
+}
+
+.link:hover {
+  color: #504A98;
+  text-decoration: none;
+}
+
 #header {
-    width: 100%;
-    background: #ffcc00;
-    grid-area: header;
-    padding: 1.5% 2%;
-    margin-bottom: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background: #ffcc00;
+  grid-area: header;
+  padding: 1.5% 2%;
+  margin-bottom: 5%;
+  font-family: 'Alatsi', sans-serif;
 }
 
 #header a {
@@ -29,84 +47,37 @@ body {
   padding-right: 1.5%;
 }
 
-#body-container-index {
-    background: linear-gradient(
+#body-container {
+  background: linear-gradient(
     to right, 
     #ffecb3 0%, 
-    #ffecb3 50%, 
-    #FFFFFF 50%, 
+    #ffecb3 40%, 
+    #FFFFFF 40%, 
     #FFFFFF 100%
   );
-   grid-area: main;
-   display: inline-block;
+  grid-area: main;
+  display: inline-block;
 
-}
-
-#body-container {
-   background: #ffecb3;
-   grid-area: main;
-   display: inline-block;
 }
 
 #pic-container-1 {
-   margin-top: 14%;
-   margin-bottom: 5%;
-   margin-right: 5%;
-   margin-left: 30%;
-   position: absolute; 
-   float: left;
+  margin-top: 14%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 30%;
+  position: absolute;
+  float: left;
 }
 
-#card-pic.card {
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 400px;
-  width: 150%;
+  width: 140%;
   align-items: center;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   background: #ffcc00;
-}
-
-#resume-card.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 70%;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #ffcc00;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-#resume-left-text p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-#resume-left-text #date {
-  font-weight: bold;
-  font-size: 200%;
-  color: blue;
-}
-
-#resume-left-text #position {
-  font-weight: bold;
-  font-size: 150%;
-}
-
-#resume-left-text #company {
-}
-
-#resume-left-text {
-  align-items: center;
-  text-align: center;
-    float: left;
-}
-
-#resume-right-text {
-  align-items: flex-start;
-  text-align: justify;
-  float: right;
+  border: none !important;
 }
 
 #pic-container-1 .card img {
@@ -116,15 +87,16 @@ body {
 }
 
 #pic-container-1 .card .nametag {
-  font-family: Marker Felt, fantasy;
+  font-family: 'Alatsi', sans-serif;
   font-size: 180%;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
+  color: #0D0A33;
 }
 
 .hrz {
-  border: 1px solid black;
+  border: 1px solid #0D0A33;
   width: 20%;
 }
 
@@ -132,55 +104,120 @@ body {
   font-family: Courier New, Courier, monospace;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 120%;
+  font-size: 130%;
   margin: 10%;
+  transform: scale(.8, 1);
+  color: #0D0A33;
 }
 
 #social-media-buttons {
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 #social-media-buttons a {
-  color: black;
+  color: #0D0A33;
 }
 
 #social-media-buttons a:hover {
   color: white;
 }
 
+#location {
+  margin-bottom: 5%;
+}
+
 #text-container-1 {
-   padding-top: 12%;
-   padding-bottom: 5%;
-   padding-right: 5%;
-   padding-left: 65%;
+  padding-top: 12%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  padding-left: 65%;
 }
 
 #text-container-1 p {
-  color: black;
+  color: #0D0A33;
 }
 
 #hello {
- font-size: 600%;
- font-family: Arial, Helvetica, sans-serif;
- font-weight: bold;
- padding: 0;
- margin: 0;
+  font-size: 600%;
+  font-family: 'Alatsi', sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.whoIamHolder {
+  margin-bottom: 20%;
 }
 
 #whoIam {
-  font-size: 120%;
-  margin-bottom: 10%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 140%;
+  color: #0D0A33;
+  font-family: 'Varta', sans-serif;
+}
+
+#title {
+  font-size: 140%;
+  margin-bottom: 20%;
+  font-family: 'Varta', sans-serif;
+  color: color: #0D0A33;
+}
+
+#title span {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  -ms-animation: topToBottom 18s infinite;
+  -webkit-animation: topToBottom 18s infinite;
+  animation: topToBottom 18s infinite;
+  color: #0D0A33;
+}
+
+#title span:nth-child(2){
+  -ms-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+#title span:nth-child(3){
+  -ms-animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+#title span:nth-child(4){
+  -ms-animation-delay: 9s;
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+}
+
+#title span:nth-child(5){
+  -ms-animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+#title span:nth-child(6){
+  -ms-animation-delay: 15s;
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
+
+
+@-webkit-keyframes topToBottom {
+  0%, 15% {opacity: 1} /* visible for 1s */
+  15.01%, 16% {opacity: 0.5;}
+  16.01%, 17% {opacity: 0.1;}
+  17.01%, 100% {opacity: 0} /* hidden for 4s */
 }
 
 #footer {
-    width: 100%;
-    box-shadow: 0 4px 12px 4px rgba(0, 0, 0, 0.2);
-    background: #ffcc00;
-    grid-area: footer;
-    margin-top: 5%;
-    text-align: center;
-    padding: 1.5% 2%;
+  width: 100%;
+  background: #ffcc00;
+  grid-area: footer;
+  margin-top: 5%;
+  text-align: center;
+  padding: 1.5% 2%;
+  color: #0D0A33;
 }
 
 #footer p {
@@ -190,40 +227,41 @@ body {
 .button {
   background-color: white;
   border-radius:17px;
-  border:1px solid #1f2f47;
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
-  font-size:15px;
-  padding:1% 9%;
+  font-size:17px;
+  padding:2% 9% 1%;
+  font-family: 'Varta', sans-serif;
   margin-right: 3%;
   text-decoration:none;
-  text-shadow:0px 1px 0px #263666;
   margin-bottom: 10%;
 }
 
 .button1 {
-  background-color: #4CAF50; 
-  color: black; 
+  background-color: #0D0A33; 
+  color: white;
+  border: 1px solid #0D0A33;
 }
 
 .button1:hover {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #FFFFFF;
+  color: #0D0A33;
 }
 
 .button2 {
-  background-color: #008CBA; 
-  color: black; 
+  background-color: #FFFFFF; 
+  color: #0D0A33;
+  border: 1px solid #0D0A33;
 }
 
 .button2:hover {
-  background-color: #008CBA;
+  background-color: #0D0A33;
   color: white;
+  border: 1px solid #0D0A33;
 }
 
 #intro-paragraph {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 80%;
+  font-family: 'Varta', sans-serif;
+  font-size: 110%;
 }
