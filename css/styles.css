@@ -29,7 +29,7 @@ body {
   padding-right: 1.5%;
 }
 
-#body-container {
+#body-container-index {
     background: linear-gradient(
     to right, 
     #ffecb3 0%, 
@@ -42,23 +42,71 @@ body {
 
 }
 
+#body-container {
+   background: #ffecb3;
+   grid-area: main;
+   display: inline-block;
+}
+
 #pic-container-1 {
    margin-top: 14%;
    margin-bottom: 5%;
    margin-right: 5%;
    margin-left: 30%;
-   position: absolute;
+   position: absolute; 
    float: left;
 }
 
-.card {
+#card-pic.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 400px;
-  width: 140%;
+  width: 150%;
   align-items: center;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   background: #ffcc00;
+}
+
+#resume-card.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 70%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffcc00;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#resume-left-text p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#resume-left-text #date {
+  font-weight: bold;
+  font-size: 200%;
+  color: blue;
+}
+
+#resume-left-text #position {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+#resume-left-text #company {
+}
+
+#resume-left-text {
+  align-items: center;
+  text-align: center;
+    float: left;
+}
+
+#resume-right-text {
+  align-items: flex-start;
+  text-align: justify;
+  float: right;
 }
 
 #pic-container-1 .card img {
