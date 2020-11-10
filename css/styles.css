@@ -72,12 +72,13 @@ body {
 
 #resume-card.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 80%;
+  width: 60%;
   font-family: Arial, Helvetica, sans-serif;
   background: #ffcc00;
   margin-top: 2%;
   margin-bottom: 2%;
-  margin-left: 10%;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: inherit;
 }
 
@@ -85,7 +86,8 @@ body {
   flex: 10%;
   align-items: center;
   text-align: center;
-  margin-top: 4%;
+  margin-top: auto;
+  margin-bottom: auto;
   padding-left: 1%;
 }
 
@@ -97,7 +99,8 @@ body {
 .column2-resume {
   flex: 80%;
   text-align: justify;
-    margin-top: 1%;
+  margin-top: 1%;
+  margin-right: 2%;
 }
 
 #pic-container-1 .card img {
