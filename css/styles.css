@@ -1,4 +1,3 @@
-/* Pen-specific styles */
 html { 
   height: 100%;
   color: #fff;
@@ -81,6 +80,11 @@ body {
   margin-right: auto;
   padding: 15px;
   flex-direction: inherit;
+}
+
+#project-card img {
+  width: 100%;
+  height: 100%;
 }
 
 .column1-resume {
